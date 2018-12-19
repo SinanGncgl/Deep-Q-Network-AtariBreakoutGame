@@ -1,10 +1,7 @@
 # Deep-Q-Network-AtariBreakoutGame
 Playing Atari Breakout Game with Reinforcement Learning ( Deep Q Learning )
 
-
-
-
-
+<img src="https://user-images.githubusercontent.com/23141486/50246167-84af8400-03e5-11e9-87b1-99813981482e.gif" width="390" height="410">
 
 
 # Overview 
