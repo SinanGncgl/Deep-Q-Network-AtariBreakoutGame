@@ -4,6 +4,9 @@ Playing Atari Breakout Game with Reinforcement Learning ( Deep Q Learning )
 
 
 
+
+
+
 # Overview 
 
 This project follows the description of the [Deep Q Learning algorithm](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) described in this paper.
@@ -38,7 +41,7 @@ I highly recommend to read this [Demystifying Deep Reinforcement Learning](https
 
 # Network Architecture
 
-"Working directly with raw Atari frames, which are 210 × 160 (our case it depends on pygame screen) pixel images with a 128 color palette, can be computationally demanding, so we apply a basic preprocessing step aimed at reducing the input dimensionality. The raw frames are preprocessed by first converting their RGB representation to gray-scale and down-sampling it to a 84×84 image.As input Q-Network is preprocessing to the last 4 frames of a history and stacks them to produce the input to the Q-function.This process can be visualized as the following figure:
+"Working directly with raw Atari frames, which are 210 × 160 (in our case it depends on pygame screen) pixel images with a 128 color palette, can be computationally demanding, so we apply a basic preprocessing step aimed at reducing the input dimensionality. The raw frames are preprocessed by first converting their RGB representation to gray-scale and down-sampling it to a 84×84 image.As input Q-Network is preprocessing to the last 4 frames of a history and stacks them to produce the input to the Q-function.This process can be visualized as the following figure:
 
 ![a0](https://user-images.githubusercontent.com/23141486/50234733-63d83600-03c7-11e9-9ecb-67617efefb64.jpeg)![a1](https://user-images.githubusercontent.com/23141486/50234736-63d83600-03c7-11e9-9a20-da116e518b31.jpeg)![a2](https://user-images.githubusercontent.com/23141486/50234737-6470cc80-03c7-11e9-8136-60523fb67ed7.jpeg)![a3](https://user-images.githubusercontent.com/23141486/50234740-663a9000-03c7-11e9-938a-82e82fdaac4c.jpeg)
 
@@ -48,4 +51,12 @@ And convert these images to gray scale...
 
 And send these into the Q-Network.
 
+So what we have done;
+
+* Take last 4 frames
+* Resize images to 84x84
+* Convert frames to gray-scale
+* Stack them 84x84x4 input array and send them into the Q-Network.
+
+The input to the neural network consists is an 84 × 84 × 4 image produced by φ. The first hidden layer convolves 32 8 × 8 filters with stride 4 with the input image and applies a rectifier nonlinearity. The second hidden layer convolves 64 4 × 4 filters with stride 2, again followed by a rectifier nonlinearity.The third hidden layer is fully-connected and consists of 7x7x64 input with 512 output,followed by a rectifier nonlinearity(input tensor is flattened). The final hidden layer is fully-connected and consists of 512 rectifier units. The output layer is a fully-connected linear layer with a single output for each valid action. The number of valid actions are 1 for left and 0 for right action.The architecture of the network is shown in the figure below:
 
