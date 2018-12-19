@@ -33,4 +33,5 @@ I highly recommend to read this [Demystifying Deep Reinforcement Learning](https
 
 # DQN Algorithm
 
+![dqn](https://user-images.githubusercontent.com/23141486/50232917-50c36700-03c3-11e9-8fd7-2af40b5c16ce.png)
 
