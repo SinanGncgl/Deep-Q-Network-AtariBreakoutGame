@@ -17,3 +17,9 @@ This project follows the description of the [Deep Q Learning algorithm](https://
 * OpenCV-Python
 * PyGame
 * PyTorch
+
+# How To Run
+
+`git clone https://github.com/SnnGnc/Deep-Q-Network-AtariBreakoutGame.git`
+`cd brekout`
+To train the game `python dqn.py train`, To test the pre-trained version `python dqn.py test`
