@@ -57,5 +57,6 @@ So what we have done;
 
 The input to the neural network consists is an 84 × 84 × 4 image produced by φ. The first hidden layer convolves 32 8 × 8 filters with stride 4 with the input image and applies a rectifier nonlinearity. The second hidden layer convolves 64 4 × 4 filters with stride 2, again followed by a rectifier nonlinearity.The third hidden layer is fully-connected and consists of 7x7x64 input with 512 output,followed by a rectifier nonlinearity(input tensor is flattened). The final hidden layer is fully-connected and consists of 512 rectifier units. The output layer is a fully-connected linear layer with a single output for each valid action. The number of valid actions are 1 for left and 0 for right action.The architecture of the network is shown in the figure below:
 
+Any contribution is welcome!!!
 
 COMİNG SOON STAY TUNED!
