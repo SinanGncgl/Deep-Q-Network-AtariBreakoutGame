@@ -151,7 +151,11 @@ def train(model, start):
                                   else reward_batch[i] + model.gamma * torch.max(output_1_batch[i])
                                   for i in range(len(minibatch))))
 
+        
         # extract Q-value -----> column1 * column1 + column2 * column2
+        # The main idea behind Q-learning is that if we had a function Q∗ :State × Action → ℝ
+        #that could tell us what our return would be, if we were to take an action in a given state,
+        #then we could easily construct a policy that maximizes our rewards
         q_value = torch.sum(model(state_batch) * action_batch, dim=1)
         #print("q_value: ", q_value.shape)
 
@@ -217,7 +221,7 @@ def main(mode):
         model.apply(init_weights)
         start = time.time()
         train(model, start)
-    elif mode == 'continue':
+    elif mode == 'continue': # You can change trained model id and keep training.
         model = torch.load('trained_model/current_model_420000.pth', map_location='cpu').eval()
         start = time.time()
         train(model, start)
