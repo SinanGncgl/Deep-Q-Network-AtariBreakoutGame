@@ -33,6 +33,13 @@ I highly recommend to read this [Demystifying Deep Reinforcement Learning](https
 
 ![dqn](https://user-images.githubusercontent.com/23141486/50232917-50c36700-03c3-11e9-8fd7-2af40b5c16ce.png)
 
+# Future Reward Function = Q
+
+![q_learning_equation](https://user-images.githubusercontent.com/23141486/51302629-fd851880-1a43-11e9-8453-6610d40b059f.png)
+
+# Loss Function
+
+![q-learning-equation](https://user-images.githubusercontent.com/23141486/51302649-0d9cf800-1a44-11e9-8c36-12c36776628d.png)
 
 
 
