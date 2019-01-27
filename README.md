@@ -3,7 +3,6 @@ Playing Atari Breakout Game with Reinforcement Learning ( Deep Q Learning )
 
 <img src="https://user-images.githubusercontent.com/23141486/50246167-84af8400-03e5-11e9-87b1-99813981482e.gif" width="390" height="410">
 
-
 # Overview 
 
 This project follows the description of the [Deep Q Learning algorithm](https://www.cs.toronto.edu/~vmnih/docs/dqn.pdf) described in this paper.
@@ -64,4 +63,4 @@ So what we have done;
 
 The input to the neural network consists is an 84 × 84 × 4 image produced by φ. The first hidden layer convolves 32 8 × 8 filters with stride 4 with the input image and applies a rectifier nonlinearity. The second hidden layer convolves 64 4 × 4 filters with stride 2, again followed by a rectifier nonlinearity.The third hidden layer is fully-connected and consists of 7x7x64 input with 512 output,followed by a rectifier nonlinearity(input tensor is flattened). The final hidden layer is fully-connected and consists of 512 rectifier units. The output layer is a fully-connected linear layer with a single output for each valid action. The number of valid actions are 1 for left and 0 for right action.The architecture of the network is shown in the figure below:
 
-Any contribution is welcome!!!
+Any contribution is welcome.
