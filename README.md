@@ -40,8 +40,6 @@ I highly recommend to read this [Demystifying Deep Reinforcement Learning](https
 
 ![q-learning-equation](https://user-images.githubusercontent.com/23141486/51302649-0d9cf800-1a44-11e9-8c36-12c36776628d.png)
 
-
-
 # Network Architecture
 
 "Working directly with raw Atari frames, which are 210 × 160 (in our case it depends on pygame screen) pixel images with a 128 color palette, can be computationally demanding, so we apply a basic preprocessing step aimed at reducing the input dimensionality. The raw frames are preprocessed by first converting their RGB representation to gray-scale and down-sampling it to a 84×84 image.As input Q-Network is preprocessing to the last 4 frames of a history and stacks them to produce the input to the Q-function.This process can be visualized as the following figure:
