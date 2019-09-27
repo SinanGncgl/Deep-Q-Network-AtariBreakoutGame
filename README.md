@@ -24,7 +24,7 @@ This project follows the description of the [Deep Q Learning algorithm](https://
 * To test the pre-trained version,
 * `python dqn.py test`
 
-# What is Deep Q Learning and How does is work ?
+# What is Deep Q Learning and How does it works ?
 
 I highly recommend to read this [Demystifying Deep Reinforcement Learning](https://ai.intel.com/demystifying-deep-reinforcement-learning/) who are curious about reinforcement learning.
 
